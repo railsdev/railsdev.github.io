@@ -8,7 +8,7 @@
   "site": {
     "title": "has_many :posts, through: :blog",
     "description": "Compilation of daily programming gotchas  ",
-    "logo": "https://avatars.githubusercontent.com/u/223024?v=5",
+    "logo": "http://i.imgur.com/fiH1y5q.png",
     "cover": "https://c2.staticflickr.com/6/5272/5872169307_e86e406041_b.jpg",
     "postsPerPage": "5",
     "disqus": "thehardikjoshi"
