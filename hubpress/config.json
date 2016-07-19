@@ -13,7 +13,13 @@
     "postsPerPage": "5",
     "disqus": "thehardikjoshi"
   },
-  "socialnetwork": {},
+  "socialnetwork": {
+    "email": "mail@hardikjoshi.me",
+    "twitter": "https://twitter.com/thehardikjoshi",
+    "linkedin": "https://www.linkedin.com/in/thehardikjoshi",
+    "facebook": "https://www.facebook.com/thehardikjoshi",
+    "github": "http://github.com/railsdev"
+  },
   "theme": {
     "name": "uno-zen"
   }
