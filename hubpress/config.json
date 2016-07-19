@@ -2,7 +2,8 @@
   "meta": {
     "username": "railsdev",
     "repositoryName": "railsdev.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": "hardikjoshi.me"
   },
   "site": {
     "title": "has_many :posts, through: :blog",
