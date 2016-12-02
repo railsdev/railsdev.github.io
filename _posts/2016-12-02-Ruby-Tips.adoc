@@ -26,4 +26,4 @@ end
 MyApp.new    # => 120
 p 2.minutes  # => NoMethodError
 ----
-_(to be continued)_
+_(to be continued...)_
