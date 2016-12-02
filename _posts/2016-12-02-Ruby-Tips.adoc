@@ -1,0 +1,29 @@
+= Ruby Tips =
+:keywords: ruby, refinements
+:description: Some cool ruby tips
+:hp-tags: ruby
+
+====== http://ruby-doc.org/core-2.1.1/doc/syntax/refinements_rdoc.html[Refinements]
+
+Refinements are designed to reduce the impact of monkey patching on other users of the monkey-patched class. Refinements provide a way to extend a class locally.
+
+[source,ruby]
+----
+module TimeExtensions
+  refine Fixnum do
+    def minutes; self * 60; end
+  end
+end
+
+class MyApp
+  using TimeExtensions
+
+  def initialize
+    p 2.minutes
+  end
+end
+
+MyApp.new    # => 120
+p 2.minutes  # => NoMethodError
+----
+_(to be continues)_
