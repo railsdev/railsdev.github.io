@@ -1,93 +1,79 @@
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript&plugins=line-highlight+show-language */
-
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+ruby+jsx+typescript */
 /**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
  */
 
-code,
-pre {
-  font-family: $code-font;
-  font-size: 90%;
-  line-height: 1.5;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-wrap: normal;
-  word-break: normal;
-  tab-size: 2;
-  hyphens: none;
-  color: black;
-  text-shadow: 0 1px white;
-  direction: ltr;
-}
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
 
-pre::selection,
-code::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
-@media print {
-  code,
-  pre {
-    text-shadow: none;
-  }
-
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
 /* Code blocks */
-pre {
-  padding: 1em;
-  margin: 2.5rem 0;
-  overflow: auto;
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
 }
 
-:not(pre) > code,
-pre {
-  border: 1px solid rgba(0, 0, 0, .15);
-  background: #fbfaf8;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
 }
 
 /* Inline code */
-:not(pre) > code {
-  // slack style
-  padding: 1px 3px;
-  font-family: $code-font;
-  font-size: 72%;
-  line-height: 72%;
-  white-space: normal;
-  color: #c25;
-  border: 1px solid #e1e1e8;
-  border-radius: .3em;
-  background-color: #f7f7f9;
-  text-shadow: 0 1px #fff;
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #969896;
+	color: slategray;
 }
 
 .token.punctuation {
-  color: #333;
+	color: #f8f8f2;
 }
 
 .namespace {
-  opacity: .7;
+	opacity: .7;
 }
 
 .token.property,
 .token.tag,
-.token.boolean,
-.token.number,
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #0086b3;
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
 }
 
 .token.selector,
@@ -96,71 +82,41 @@ pre {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #183691;
+	color: #a6e22e;
 }
 
 .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
-.style .token.string {
-  color: #a71d5d;
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
 }
 
 .token.atrule,
 .token.attr-value,
-.token.keyword {
-  color: #a71d5d;
+.token.function {
+	color: #e6db74;
 }
 
-.token.function {
-  color: #0086b3;
+.token.keyword {
+	color: #66d9ef;
 }
 
 .token.regex,
-.token.important,
-.token.variable {
-  color: #e90;
+.token.important {
+	color: #fd971f;
 }
 
 .token.important,
 .token.bold {
-  font-weight: bold;
+	font-weight: bold;
 }
-
 .token.italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 .token.entity {
-  cursor: help;
-}
-
-pre[data-line] {
-  position: relative;
-  padding: 1em 0 1em 3em;
-}
-
-div.prism-show-language {
-  position: relative;
-}
-
-div.prism-show-language > div.prism-show-language-label[data-language] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  z-index: 1;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  padding: 0 .5em;
-  font-size: .9em;
-  transform: none;
-  color: black;
-  border-radius: 0 0 0 5px;
-  background-color: #cfcfcf;
-  box-shadow: none;
-  text-shadow: none;
+	cursor: help;
 }
