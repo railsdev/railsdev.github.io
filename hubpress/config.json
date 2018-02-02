@@ -22,5 +22,21 @@
   },
   "theme": {
     "name": "uno-zen"
+  },
+  "urls": {
+    "site": "http://hardikjoshi.me",
+    "hubpress": "http://hardikjoshi.me",
+    "theme": "//hardikjoshi.me/themes/uno-zen",
+    "images": "http://hardikjoshi.me/images"
+  },
+  "initialisationConfigComponent": {
+    "name": "initialise-configuration",
+    "computed": {},
+    "methods": {},
+    "staticRenderFns": [
+      null,
+      null,
+      null
+    ]
   }
 }
