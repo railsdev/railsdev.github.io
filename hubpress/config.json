@@ -11,14 +11,21 @@
     "logo": "https://lh5.googleusercontent.com/-e78wcg--UTg/AAAAAAAAAAI/AAAAAAAAAAA/pdvSQ1sDJxI/s128-c-k/photo.jpg",
     "cover": "https://s-media-cache-ak0.pinimg.com/736x/0b/f9/5b/0bf95b9203fe45ab8d5e7266647fa3f9.jpg",
     "postsPerPage": "5",
-    "disqus": "thehardikjoshi"
+    "disqus": "thehardikjoshi",
+    "delay": "",
+    "googleAnalytics": "UA-76625655-1"
   },
   "socialnetwork": {
     "email": "mail@hardikjoshi.me",
     "twitter": "https://twitter.com/thehardikjoshi",
     "linkedin": "https://www.linkedin.com/in/thehardikjoshi",
     "facebook": "https://www.facebook.com/thehardikjoshi",
-    "github": "http://github.com/railsdev"
+    "github": "http://github.com/railsdev",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "stackoverflow": ""
   },
   "theme": {
     "name": "uno-zen"
