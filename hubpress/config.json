@@ -13,7 +13,8 @@
     "postsPerPage": "5",
     "disqus": "thehardikjoshi",
     "delay": "",
-    "googleAnalytics": "UA-76625655-1"
+    "googleAnalytics": "UA-76625655-1",
+    "blogPath": ""
   },
   "socialnetwork": {
     "email": "mail@hardikjoshi.me",
@@ -25,10 +26,12 @@
     "instagram": "",
     "pinterest": "",
     "flickr": "",
-    "stackoverflow": ""
+    "stackoverflow": "",
+    "paypalme": "",
+    "opencollective": ""
   },
   "theme": {
-    "name": "uno-zen"
+    "name": "casper"
   },
   "urls": {
     "site": "http://hardikjoshi.me",
@@ -49,5 +52,6 @@
     "beforeCreate": [
       null
     ]
-  }
+  },
+  "navigation": []
 }
