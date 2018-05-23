@@ -31,12 +31,12 @@
     "opencollective": ""
   },
   "theme": {
-    "name": "the-shell"
+    "name": "roon"
   },
   "urls": {
     "site": "http://hardikjoshi.me",
     "hubpress": "http://hardikjoshi.me",
-    "theme": "//hardikjoshi.me/themes/casper",
+    "theme": "//hardikjoshi.me/themes/the-shell",
     "images": "http://hardikjoshi.me/images"
   },
   "initialisationConfigComponent": {
