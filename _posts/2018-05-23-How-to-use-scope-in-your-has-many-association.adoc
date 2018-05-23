@@ -1,0 +1,15 @@
+// = Using scope in has_many
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2018-05-23
+// :hp-tags: Rails, Activerecord, has_many, scopes
+// :hp-alt-title: Using scope in has_many
+
+= How to use scope in your has_many association?
+
+[source, ruby]
+----
+has_many :relation_name, -> { name_of_scope_in_related_table }, class_name: ‘NameOfRelatedClass’
+----
+
+
