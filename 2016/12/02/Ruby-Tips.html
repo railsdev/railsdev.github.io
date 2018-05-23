@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Ruby Tips</title>
-    <meta name="description" content="" />
-    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//hardikjoshi.me/themes/saga/assets/css/style.css?v=1527081281778" rel="stylesheet" type="text/css">
-    <link href="//hardikjoshi.me/themes/saga/assets/css/animate.min.css?v=1527081281778" rel="stylesheet" type="text/css">
-    <link href="http://hardikjoshi.me/favicon.ico" rel="shortcut icon">
+    <title>Ruby Tips - has_many :posts, through: :blog</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ruby Tips">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ruby Tips">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="//hardikjoshi.me/themes/uno/assets/css/uno.css?v=1527081341514" />
+
     <link rel="canonical" href="http://hardikjoshi.me/2016/12/02/Ruby-Tips.html" />
     <meta name="referrer" content="origin" />
     
@@ -55,32 +68,115 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism-okaidia.min.css">
     
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
 </head>
-<body class="post-template tag-ruby">
-    <header id="header" class="animated fadeIn">
-    <div class="header-background">
-    <section class="blog-content">
-        <a id="site-url" class="blog-title" href="http://hardikjoshi.me">has_many :posts, through: :blog</a>
-        <span class="blog-description">Compilation of daily programming gotchas  </span>
-        <nav class="links fadeIn animated">
-            <ul>
-                <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li>
-        
-            </ul>
-        </nav>
-    </section>
-    <section class="header-content">
-        <h1 class="post-title animated fadeInUp">Ruby Tips</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1480617000" datetime="2016-12-02T00:00" title="02 December 2016">a year ago</time></span>
-            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://hardikjoshi.me/tag/ruby/">ruby</a></span>
-            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="http://hardikjoshi.me/author/railsdev/">Hardik Joshi</a></span></span>
-    </section>
-    </div>
-</header>
-<main id="main" class="content">
-    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-ruby">
-        <section class="post-content">
-            <div class="sect2">
+<body class="post-template tag-ruby no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " style="background-image: url(https://s-media-cache-ak0.pinimg.com/736x/0b/f9/5b/0bf95b9203fe45ab8d5e7266647fa3f9.jpg)">
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://hardikjoshi.me" title="link to homepage for has_many :posts, through: :blog"><img src="https://lh5.googleusercontent.com/-e78wcg--UTg/AAAAAAAAAAI/AAAAAAAAAAA/pdvSQ1sDJxI/s128-c-k/photo.jpg" width="80" alt="has_many :posts, through: :blog logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://hardikjoshi.me" title="link to homepage for has_many :posts, through: :blog">has_many :posts, through: :blog</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Compilation of daily programming gotchas  </p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="http://hardikjoshi.me/#blog" title="link to has_many :posts, through: :blog blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="https://www.facebook.com/thehardikjoshi" title="Facebook account">
+                      <i class='icon icon-social-facebook'></i>
+                      <span class="label">Facebook</span>
+                    </a>
+                  </li>
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="https://twitter.com/thehardikjoshi" title="Twitter account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="http://github.com/railsdev" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="https://www.linkedin.com/in/thehardikjoshi" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+                  <!-- Email -->
+                  <li class="navigation__item">
+                    <a href="mailto:mail@hardikjoshi.me" title="Email mail@hardikjoshi.me">
+                      <i class='icon icon-mail'></i>
+                      <span class="label">Email</span>
+                    </a>
+                  </li>
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="02 Dec 2016" class="post-meta__date date">02 Dec 2016</time> &#8226; <span class="post-meta__tags tags">on <a href="http://hardikjoshi.me/tag/ruby/">ruby</a></span>
+        <span class="post-meta__author author"><img src="https://avatars0.githubusercontent.com/u/223024?v&#x3D;4" alt="profile image for Hardik Joshi" class="avatar post-meta__avatar" /> by Hardik Joshi</span>
+      </div>
+      <h1 class="post-title">Ruby Tips</h1>
+    </header>
+
+    <section class="post tag-ruby">
+      <div class="sect2">
 <h3 id="_a_href_http_ruby_doc_org_core_2_1_1_doc_syntax_refinements_rdoc_html_refinements_a"><a href="http://ruby-doc.org/core-2.1.1/doc/syntax/refinements_rdoc.html">Refinements</a></h3>
 <div class="paragraph">
 <p>Refinements are designed to reduce the impact of monkey patching on other users of the monkey-patched class. Refinements provide a way to extend a class locally.</p>
@@ -109,38 +205,36 @@ p 2.minutes  # =&gt; NoMethodError</code></pre>
 <p><em>(to be continued&#8230;&#8203;)</em></p>
 </div>
 </div>
-        </section>
+    </section>
 
-    
-        <section class="post-comments">
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-          var disqus_shortname = 'thehardikjoshi'; // required: replace example with your forum shortname
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
+  </article>
+
+  
+  <section class="post-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'thehardikjoshi'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </section>
-    
-    </article>
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </section>
+  
 
-</main>
-    <footer class="animated fadeIn" id="footer">
-        <section class="colophon">
-          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">has_many :posts, through: :blog</span>. <span rel="license">All Rights Reserved</span>.</section>
-          <section class="poweredby">Published with <a class="icon-ghost" href="https://hubpress.github.io">HubPress</a></section>
-        </section>
-        <section class="bottom">
-          <section class="attribution">
-            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
-          </section>
-        </section>
-    </footer>
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2018. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="https://hubpress.github.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
 
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -160,7 +254,8 @@ p 2.minutes  # =&gt; NoMethodError</code></pre>
 
         // hljs.initHighlightingOnLoad();
       </script>
-    <script src="//hardikjoshi.me/themes/saga/assets/js/scripts.js?v=1527081281778"></script>
+
+    <script type="text/javascript" src="//hardikjoshi.me/themes/uno/assets/js/main.js?v=1527081341514"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -172,5 +267,6 @@ p 2.minutes  # =&gt; NoMethodError</code></pre>
     ga('send', 'pageview');
 
     </script>
+
 </body>
 </html>
