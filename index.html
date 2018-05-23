@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <script>
-        // UNCOMMENT AND USE YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
-        // var d_id  = '',
-        //     g_id  = 'UA-XXXXXXXX-X', // Format: UA-########-#, Example: UA-11220899-1
-        //     g_url = 'XXXXXXX.XXX' // Format: #####.####, Example: webdesignporto.com
-    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>has_many :posts, through: :blog</title>
     <meta name="description" content="" />
 
     <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//hardikjoshi.me/themes/the-shell/assets/highlighter/prettify.css?v=1527080940498" />
-    <link rel="stylesheet" type="text/css" href="//hardikjoshi.me/themes/the-shell/assets/css/screen.css?v=1527080940498" />
+    <link rel="shortcut icon" href="http://hardikjoshi.me/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
+    <link rel="stylesheet" type="text/css" href="//hardikjoshi.me/themes/roon/assets/css/screen.css?v=1527081051214" />
 
     <link rel="canonical" href="http://hardikjoshi.me/" />
     <meta name="referrer" content="origin" />
@@ -45,86 +40,111 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism-okaidia.min.css">
     
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-76625655-1', 'auto');
-    ga('send', 'pageview');
-
-    </script>
 </head>
-<body class="home-template">
+<body class="home-template  ">
 
     
-
-<header id="site-head" style="background-image: url(https://s-media-cache-ak0.pinimg.com/736x/0b/f9/5b/0bf95b9203fe45ab8d5e7266647fa3f9.jpg)">
-    <div class="vertical animated bounceInDown">
-        <div id="site-head-content" class="inner">
-
-            <a id="blog-logo" href="http://hardikjoshi.me"><img src="https://lh5.googleusercontent.com/-e78wcg--UTg/AAAAAAAAAAI/AAAAAAAAAAA/pdvSQ1sDJxI/s128-c-k/photo.jpg" alt="Blog Logo" /></a>
-            <h1 class="blog-title">has_many :posts, through: :blog</h1>
-            <h2 class="blog-description">Compilation of daily programming gotchas  </h2>
-        </div>
+<header role="banner">
+    <div class="wrap">
+        <h1><a href="http://hardikjoshi.me">has_many :posts, through: :blog</a></h1>
+        <hr>
     </div>
 </header>
 
-<main class="content" role="main">
+
+<article class="post tag-ruby ">
 
 
-    <article class="post tag-ruby">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="2016-12-02">02 Dec 2016</time> on <a href="http://hardikjoshi.me/tag/ruby/">ruby</a></span>
-            <h2 class="post-title"><a href="http://hardikjoshi.me/2016/12/02/Ruby-Tips.html">Ruby Tips</a></h2>
+    <div class="meta">
+        <time datetime="2016-12-02"><a href="http://hardikjoshi.me/2016/12/02/Ruby-Tips.html">December 02, 2016</a></time>
+    </div>
 
-            <!--<a href="http://hardikjoshi.me/2016/12/02/Ruby-Tips.html#disqus_thread"></a>-->
-        </header>
-        <section class="post-excerpt">
-            <p>Refinements Refinements are designed to reduce the impact of monkey patching on other users of the monkey-patched class. Refinements provide a way to extend a class locally. module TimeExtensions   refine Fixnum do     def minutes; self * 60; end   end end class MyApp   using TimeExtensions   def initialize     p 2.minutes   end end&hellip;</p>
-        </section>
-    </article>
+    <header>
+        <h1><a href="http://hardikjoshi.me/2016/12/02/Ruby-Tips.html">Ruby Tips</a></h1>
+    </header>
 
+    <div class="text">
+        <p>Refinements Refinements are designed to reduce the impact of monkey patching on other users of the monkey-patched class. Refinements provide a way to extend a class locally. module TimeExtensions   refine Fixnum do     def minutes; self * 60; end   end end class MyApp   using TimeExtensions   def initialize</p>
+        <a href="http://hardikjoshi.me/2016/12/02/Ruby-Tips.html" class="readmore">Continue Reading</a>
+    </div>
+</article>
 
-    <article class="post">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="2016-07-19">19 Jul 2016</time> </span>
-            <h2 class="post-title"><a href="http://hardikjoshi.me/2016/07/19/A-Dummy-Post.html">A Dummy Post</a></h2>
-
-            <!--<a href="http://hardikjoshi.me/2016/07/19/A-Dummy-Post.html#disqus_thread"></a>-->
-        </header>
-        <section class="post-excerpt">
-            <p>Lorem ipsum dolor sit amet, vel te eligendi lobortis, pro an maluisset dissentiunt, est erat bonorum no. In integre dolores nec, eam cu hinc nobis consetetur, possit verear accusam an pri. Quo illud lucilius maiestatis at. Fastidii probatus definitiones ei ius, cum no quas aeterno, vero brute laoreet at his.&hellip;</p>
-        </section>
-    </article>
+<article class="post ">
 
 
-    <nav class="pagination" role="navigation">
+    <div class="meta">
+        <time datetime="2016-07-19"><a href="http://hardikjoshi.me/2016/07/19/A-Dummy-Post.html">July 19, 2016</a></time>
+    </div>
+
+    <header>
+        <h1><a href="http://hardikjoshi.me/2016/07/19/A-Dummy-Post.html">A Dummy Post</a></h1>
+    </header>
+
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, vel te eligendi lobortis, pro an maluisset dissentiunt, est erat bonorum no. In integre dolores nec, eam cu hinc nobis consetetur, possit verear accusam an pri. Quo illud lucilius maiestatis at. Fastidii probatus definitiones ei ius, cum no quas aeterno,</p>
+        <a href="http://hardikjoshi.me/2016/07/19/A-Dummy-Post.html" class="readmore">Continue Reading</a>
+    </div>
+</article>
+
+<nav class="pagination" role="navigation">
     <span class="page-number">Page 1 of 1</span>
 </nav>
 
 
-    <script type="text/javascript">
-    var disqus_shortname = 'thehardikjoshi'; // required: replace example with your forum shortname
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-</main>
+<footer role="contentinfo">
+    <div class="inner">
+        <div class="vcard">
+            <a href="http://hardikjoshi.me/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                <span aria-hidden="true" data-icon=")"></span>
+                <strong>Feed</strong>
+            </a>
 
+            <a href="http://hardikjoshi.me" class="photo circle">
+                <span style="background-image: url('https://lh5.googleusercontent.com/-e78wcg--UTg/AAAAAAAAAAI/AAAAAAAAAAA/pdvSQ1sDJxI/s128-c-k/photo.jpg');">
+                    <img src="https://lh5.googleusercontent.com/-e78wcg--UTg/AAAAAAAAAAI/AAAAAAAAAAA/pdvSQ1sDJxI/s128-c-k/photo.jpg" alt="has_many :posts, through: :blog">
+                </span>
+            </a>
 
-    <footer class="site-footer">
-        <!-- <a class="subscribe icon-feed" href="http://hardikjoshi.me/rss/"><span class="tooltip">Subscribe!</span></a> -->
-        <div class="inner">
-             <section class="copyright">All content copyright <a href="/">has_many :posts, through: :blog</a> &copy; 2018 &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a href="https://hubpress.github.io">HubPress</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
+            <div class="details">
+                <h4><a href="http://hardikjoshi.me" class="url n">has_many :posts, through: :blog</a></h4>
+                <a href="http://hardikjoshi.me" class="js-remove-domain-schema">http://hardikjoshi.me</a><br>
+                <span>Published with <a href="https://hubpress.github.io">HubPress</a></span>
+            </div>
         </div>
-    </footer>
+        <div id="user_bio">
+            <div class="inner">
+                Compilation of daily programming gotchas  
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        <a href="http://hardikjoshi.me" id="blog_badge">
+            <span style="background-image: url('https://lh5.googleusercontent.com/-e78wcg--UTg/AAAAAAAAAAI/AAAAAAAAAAA/pdvSQ1sDJxI/s128-c-k/photo.jpg');">has_many :posts, through: :blog</span>
+        </a>
+
+
+    <script>
+
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
+        }
+
+        window.onload = function () {
+            no_schema_links();
+
+        }
+    </script>
 
 
     <script
@@ -145,7 +165,18 @@
         // hljs.initHighlightingOnLoad();
       </script>
 
-    <script type='text/javascript' src="//hardikjoshi.me/themes/the-shell/assets/highlighter/prettify.js?v=1527080940498"></script>
-    <script type='text/javascript' src="//hardikjoshi.me/themes/the-shell/assets/js/shell.js?v=1527080940498"></script>
+
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76625655-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
 </body>
 </html>
