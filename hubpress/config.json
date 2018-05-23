@@ -31,12 +31,12 @@
     "opencollective": ""
   },
   "theme": {
-    "name": "casper"
+    "name": "the-shell"
   },
   "urls": {
     "site": "http://hardikjoshi.me",
     "hubpress": "http://hardikjoshi.me",
-    "theme": "//hardikjoshi.me/themes/uno-zen",
+    "theme": "//hardikjoshi.me/themes/casper",
     "images": "http://hardikjoshi.me/images"
   },
   "initialisationConfigComponent": {
