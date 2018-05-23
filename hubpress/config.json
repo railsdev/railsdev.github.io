@@ -31,12 +31,12 @@
     "opencollective": ""
   },
   "theme": {
-    "name": "saga"
+    "name": "uno"
   },
   "urls": {
     "site": "http://hardikjoshi.me",
     "hubpress": "http://hardikjoshi.me",
-    "theme": "//hardikjoshi.me/themes/ghostium",
+    "theme": "//hardikjoshi.me/themes/saga",
     "images": "http://hardikjoshi.me/images"
   },
   "initialisationConfigComponent": {
